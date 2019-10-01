@@ -37,7 +37,7 @@ class ViewController: UIViewController {
     
     private func setImageStyle(){
         imageView.layer.masksToBounds = true
-        imageView.layer.cornerRadius = imageView.frame.size.height/2
+        imageView.layer.cornerRadius = imageView.frame.size.width/2
         imageView.clipsToBounds = true
     }
     
