@@ -245,6 +245,11 @@
                     <navigationItem key="navigationItem" id="6gQ-a3-VWe">
                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="x7n-wj-9qi"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="nameLabel" destination="ToY-xf-VLa" id="vHa-cv-8nw"/>
+                        <outlet property="profileImage" destination="26t-UJ-L6w" id="anj-7y-ZWj"/>
+                        <outlet property="userNameLabel" destination="Ykq-eN-mmC" id="hj1-H4-YEh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
