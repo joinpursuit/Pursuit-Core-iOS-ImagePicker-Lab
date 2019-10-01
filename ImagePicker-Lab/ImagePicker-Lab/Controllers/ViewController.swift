@@ -9,7 +9,7 @@
 import UIKit
 import Photos
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIPopoverPresentationControllerDelegate{
     //MARK: -- Outlets
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
@@ -52,7 +52,7 @@ class ViewController: UIViewController {
         }))
         
         actionSheet.addAction(UIAlertAction(title: "Name", style: .default, handler: { (action:UIAlertAction) in
-            //DO STUFF
+            self.editName()
         }))
         
         actionSheet.addAction(UIAlertAction(title: "Username", style: .default, handler: { (action:UIAlertAction) in
@@ -87,7 +87,7 @@ class ViewController: UIViewController {
             })
             
         case .denied:
-            let noAuthenticationAlert = UIAlertController(title: "Denied", message: "This app has not been authorized to access your photo library. That's sad :( Please change your settings", preferredStyle: .alert)
+            let noAuthenticationAlert = UIAlertController(title: "Denied", message: "This app has not been authorized to access your photo library. fdgkjhskjhkdahgkjahdsgkhsxkdghakrsdhkjshdgkvadhsgkahwesdkghrbdjsgxhvkerdshgfjkghsdgkhaerdkgfherskdxghkaershgdjkaeshdgkaf Please change your settings", preferredStyle: .alert)
             noAuthenticationAlert.addAction(UIAlertAction (title: "Ok", style: .default, handler: nil))
             self.present(noAuthenticationAlert, animated: true, completion: nil)
         case .restricted:
@@ -111,5 +111,18 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
+    }
+    
+    
+    
+    
+    
+    private func editName() {
+        
+        let popoverContent = self.storyboard?.instantiateViewController(withIdentifier: "popover")
+        let nav = UINavigationController(rootViewController: popoverContent ?? UIViewController())
+        
+        self.present(nav, animated: true, completion: nil)
+        
     }
 }
