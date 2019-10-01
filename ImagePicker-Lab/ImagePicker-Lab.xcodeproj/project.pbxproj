@@ -54,14 +54,54 @@
 		1D4770F12343D15C00440A3E /* ImagePicker-Lab */ = {
 			isa = PBXGroup;
 			children = (
-				1D4770F22343D15C00440A3E /* AppDelegate.swift */,
-				1D4770F42343D15C00440A3E /* ViewController.swift */,
-				1D4770F62343D15C00440A3E /* Main.storyboard */,
-				1D4770F92343D15D00440A3E /* Assets.xcassets */,
-				1D4770FB2343D15D00440A3E /* LaunchScreen.storyboard */,
 				1D4770FE2343D15D00440A3E /* Info.plist */,
+				1D4771072343D5F000440A3E /* Controllers */,
+				1D4771062343D5ED00440A3E /* Views */,
+				1D4771052343D5EA00440A3E /* Models */,
+				1D4771042343D5E800440A3E /* Helpers */,
+				1D4771082343D61400440A3E /* Supporting */,
 			);
 			path = "ImagePicker-Lab";
+			sourceTree = "<group>";
+		};
+		1D4771042343D5E800440A3E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1D4771052343D5EA00440A3E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1D4771062343D5ED00440A3E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1D4770F62343D15C00440A3E /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1D4771072343D5F000440A3E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1D4770F42343D15C00440A3E /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1D4771082343D61400440A3E /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				1D4770F92343D15D00440A3E /* Assets.xcassets */,
+				1D4770FB2343D15D00440A3E /* LaunchScreen.storyboard */,
+				1D4770F22343D15C00440A3E /* AppDelegate.swift */,
+			);
+			path = Supporting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
