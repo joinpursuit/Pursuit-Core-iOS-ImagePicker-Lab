@@ -35,6 +35,12 @@ class ViewController: UIViewController {
     
     
     
+    private func setImageStyle(){
+        imageView.layer.masksToBounds = true
+        imageView.layer.cornerRadius = imageView.frame.size.height/2
+        imageView.clipsToBounds = true
+    }
+    
     private func setupImagePickerViewController() {
                imagePickerViewcontroller = UIImagePickerController()
                imagePickerViewcontroller.delegate = self
@@ -45,6 +51,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         setupImagePickerViewController()
+        setImageStyle()
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
