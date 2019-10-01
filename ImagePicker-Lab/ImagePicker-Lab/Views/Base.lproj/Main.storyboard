@@ -243,7 +243,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="6gQ-a3-VWe">
-                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="x7n-wj-9qi"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="x7n-wj-9qi">
+                            <connections>
+                                <action selector="actionSheetForDifferentActions:" destination="BYZ-38-t0r" id="V6Y-YY-0LQ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="nameLabel" destination="ToY-xf-VLa" id="vHa-cv-8nw"/>
