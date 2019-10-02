@@ -31,7 +31,7 @@
 
 /* Begin PBXFileReference section */
 		28FA4AAC2343CF3500A5A38B /* Image Picker Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Image Picker Lab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		28FA4AAF2343CF3500A5A38B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		28FA4AAF2343CF3500A5A38B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		28FA4AB12343CF3500A5A38B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		28FA4AB42343CF3500A5A38B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28FA4AB62343CF3700A5A38B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -85,16 +85,13 @@
 		28FA4AAE2343CF3500A5A38B /* Image Picker Lab */ = {
 			isa = PBXGroup;
 			children = (
-				28FA4AAF2343CF3500A5A38B /* AppDelegate.swift */,
-				28FA4ACF2343DEB600A5A38B /* EntryViewController.swift */,
-				28FA4AB12343CF3500A5A38B /* ViewController.swift */,
-				28FA4AB32343CF3500A5A38B /* Main.storyboard */,
-				28FA4AD923440EDA00A5A38B /* User.swift */,
-				28FA4AD52343EB9900A5A38B /* UserPersistence.swift */,
-				28FA4AD12343E88F00A5A38B /* PersistenceHelper.swift */,
+				28FA4ADE23444DB900A5A38B /* View */,
+				28FA4ADD23444DA900A5A38B /* Controllers */,
+				28FA4ADF23444DC100A5A38B /* Model */,
+				28FA4AE023444DF100A5A38B /* Persistence */,
 				28FA4AB62343CF3700A5A38B /* Assets.xcassets */,
-				28FA4AB82343CF3700A5A38B /* LaunchScreen.storyboard */,
 				28FA4ABB2343CF3700A5A38B /* Info.plist */,
+				28FA4AE123444E2300A5A38B /* Supporting Files */,
 			);
 			path = "Image Picker Lab";
 			sourceTree = "<group>";
@@ -106,6 +103,49 @@
 				28FA4AC62343CF3800A5A38B /* Info.plist */,
 			);
 			path = "Image Picker LabTests";
+			sourceTree = "<group>";
+		};
+		28FA4ADD23444DA900A5A38B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				28FA4ACF2343DEB600A5A38B /* EntryViewController.swift */,
+				28FA4AB12343CF3500A5A38B /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		28FA4ADE23444DB900A5A38B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				28FA4AB32343CF3500A5A38B /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		28FA4ADF23444DC100A5A38B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				28FA4AD923440EDA00A5A38B /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		28FA4AE023444DF100A5A38B /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				28FA4AD52343EB9900A5A38B /* UserPersistence.swift */,
+				28FA4AD12343E88F00A5A38B /* PersistenceHelper.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		28FA4AE123444E2300A5A38B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				28FA4AAF2343CF3500A5A38B /* AppDelegate.swift */,
+				28FA4AB82343CF3700A5A38B /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
